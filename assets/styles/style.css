@@ -28,6 +28,14 @@ body {
     color: #193b44;
 }
 
+.gallery {
+    display: none;
+}
+
+.numbers {
+    display: none;
+}
+
 .schedule {
     display: flex;
     flex-direction: column;
@@ -628,5 +636,95 @@ footer {
         width: 800px;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .schedule__day {
+        width: 900px;
+    }
+
+    .gallery {
+        width: 1400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 33px;
+    }
+
+    .gallery__element {
+        position: absolute;
+        width: 450px;
+        margin-left: -130px;
+        margin-top: -20px;
+    }
+
+    .gallery__caption {
+        position: absolute;
+        font-size: 45px ;
+        font-weight: 800;
+        margin-top: 220px ;
+        margin-left: 0px;
+        color: white ;
+        width: 300px ;
+        text-align: left ;
+    }
+
+    .caption__year{
+        color: #30cec2;
+    }
+
+    .gallery__first-row {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .gallery__first-row .gallery__image {
+        width: 25%; 
+        object-fit: cover;
+    }
+
+    .gallery__second-row {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gallery__second-row .gallery__image {
+        width: 37.5%;
+        object-fit: cover; 
+    }
+
+    .numbers {
+        display: flex;
+        height: 300px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .numbers__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+    
+    .element__number {
+        font-size: 180px;
+        font-weight: 900;
+        color: #d8d8d8;
+    }
+    
+    .element__caption {
+        font-size: 50px;
+        color: #30cec2;
+        margin: 0;
+        margin-top: 0px;
+        width: 400px;
+        text-align: center;
+        font-weight: 900;
     }
 }
