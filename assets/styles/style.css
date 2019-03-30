@@ -179,6 +179,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    overflow: hidden;
 }
 
 .sponsors__general {
@@ -297,14 +298,14 @@ body {
     margin-top: 50px;
     background-color: white;
     width: 320px;
-    padding-bottom: 70px;
+    z-index: -1;
 }
 
 .newsletter__body {
     width: 240px;
     text-align: center;
     font-weight: 300;
-    margin-top: 0;
+    margin: 20px 0;
 }
 
 .newsletter__apply {
@@ -338,13 +339,17 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 
 .swap__container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
 }
 
 .footer__vr-guy {
@@ -352,8 +357,8 @@ body {
     height: 305px;
     position: absolute;
     z-index: 1;
-    margin-top: -35px;
-    margin-left: 60px;
+    top: 35px;
+    right: -55px;
     object-fit: cover;
 }
 
@@ -361,8 +366,8 @@ body {
     background-image: url(../images/visual--holder.png);
     background-position: center;
     background-size: 600px;
-    height: 450px;
-    width: 300px;
+    height: 270px;
+    width: 100%;
     margin-top: 0px;
     margin-left: 0px;
     position: absolute;
@@ -399,6 +404,7 @@ body {
     width: 240px;
     background-color: white;
     padding: 10px 40px;
+    margin-top: 100px;
 }
 
 footer {
@@ -589,14 +595,14 @@ footer {
     .footer__pattern {
         height: 350px;
         border-radius: 30px;
-        margin-top: 20px;
+        margin-bottom: -20px;
     }
 
     .footer__vr-guy {
-        margin-right: 150px;
-        margin-left: 0px;
-        margin-top: 10px;
-        height: 370px;
+        right: -20px;
+        height: 390px;
+        top: 3px;
+        width: auto;
     }
 
     .footer__contact {
@@ -621,6 +627,7 @@ footer {
     .swap__container {
         justify-content: space-between;
         width: 1000px;
+        align-self: flex-end;
     }
 
     .footer__pattern {
@@ -654,6 +661,18 @@ footer {
         width: 800px;
         display: flex;
         justify-content: space-between;
+    }
+
+    .footer__register {
+        margin-right: 250px;
+    }
+
+    .register__body{
+        margin: 20px 0;
+    }
+
+    .footer__vr-guy{
+        right: -60px;
     }
 }
 
@@ -817,14 +836,34 @@ footer {
         width: 1100px;
     }
 
+    .swap__container{
+        width: 100%;
+    }
+
     .footer__pattern {
-        padding: 0 100px;
-        margin-left: 250px;
+        width: 720px;
+    }
+
+    .register__body{
+        margin-right: 200px;
     }
 
     .footer__vr-guy {
         width: 300px;
-        margin-left: 250px;
+        margin-left: 200px;
+    }
+
+    .footer__contact{
+        align-self: flex-start;
+        margin-left: 200px;
+        margin-top: -25px;
+    }
+
+    .contact__body{
+        line-height: 33px;
+        font-size: 20px;
+        width: 300px;
+        margin: 20px 0;
     }
 
     .newsletter__title {
