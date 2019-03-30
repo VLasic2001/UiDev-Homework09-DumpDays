@@ -180,6 +180,19 @@ body {
     border-radius: 5px;
 }
 
+.sponsors__media, .sponsors__organisers {
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.sponsors__friends {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sponsors__image {
     width: 240px;
 }
@@ -301,13 +314,20 @@ body {
     padding-bottom: 20px;
 }
 
+.swap__container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
 .footer__vr-guy {
     width: 250px;
     height: 305px;
     position: absolute;
     z-index: 1;
-    margin-top: 298px;
-    margin-left: 50px;
+    margin-top: -35px;
+    margin-left: 60px;
     object-fit: cover;
 }
 
@@ -316,8 +336,8 @@ body {
     background-position: center;
     background-size: 600px;
     height: 450px;
-    width: 400px;
-    margin-top: 200px;
+    width: 300px;
+    margin-top: 0px;
     margin-left: 0px;
     position: absolute;
     z-index: -2;
@@ -410,15 +430,13 @@ footer {
         width: 400px;
     }
 
-    .footer__vr-guy {
-        height: 310px;
-        margin-left: 150px;
-        margin-top: 290px;
+    .footer__pattern {
+        width: 420px;
     }
 
     .footer__contact {
-        width: 350px;
-        padding: 10px 40px;
+        width: 250px;
+        padding: 10px 100px;
     }
 
     .footer__register {
@@ -456,7 +474,7 @@ footer {
     }
 
     .sponsors__image--large {
-        width: 700px;
+        width: 700px !important;
     }
 
     .sponsors__main-description {
@@ -477,5 +495,138 @@ footer {
 
     .sponsors__logo {
         width: 240px;
+    }
+
+    .sponsors__silver {
+        width: 480px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sponsors__bronze  {
+        width: 720px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sponsors__organisers, .sponsors__media {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sponsors__friends {
+        width: 610px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sponsors__image--small {
+        height: 100px;
+    }
+
+    .footer__newsletter {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .newsletter__body {
+        width: 500px;
+        font-size: 18px;
+    }
+
+    .newsletter__apply {
+        width: 500px;
+    }
+
+    .newsletter__input {
+        width: 400px;
+        padding-right: 100px;
+    }
+
+    .newsletter__button {
+        width: 150px;
+    }
+
+    .swap__container {
+        flex-direction: row-reverse;
+    }
+
+    .footer__pattern {
+        height: 350px;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+
+    .footer__vr-guy {
+        margin-right: 150px;
+        margin-left: 0px;
+        margin-top: 10px;
+        height: 370px;
+    }
+
+    .footer__contact {
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    .footer__register {
+        margin-right: 150px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 100px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .swap__container {
+        justify-content: space-between;
+        width: 1000px;
+    }
+
+    .footer__pattern {
+        width: 500px;
+        background-size: 800px;
+    }
+
+    .sponsors__title--blue {
+        width: 700px;
+    }
+
+    .sponsors__silver {
+        width: 720px;
+        justify-content: center;
+    }
+
+    .sponsors__bronze {
+        height: 100px;
+    }
+
+    .sponsors__bronze .sponsors__logo{
+        width: 170px;
+        height: 80px;
+    }
+
+    .sponsors__friends {
+        width: 960px;
+    }
+
+    footer {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
     }
 }
