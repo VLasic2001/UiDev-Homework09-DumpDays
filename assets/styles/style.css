@@ -184,6 +184,11 @@ body {
     width: 240px;
 }
 
+.sponsors__logo {
+    width: 180px;
+    height: 100px;
+}
+
 .sponsors__image--small {
     width: 170px;
 }
@@ -234,6 +239,18 @@ body {
     font-size: 42px;
 }
 
+.sponsors__silver, .sponsors__bronze {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+}
+
+.sponsors__silver-title, .sponsors__bronze-title {
+    margin: 0;
+}
+
 .footer__newsletter {
     display: flex;
     flex-direction: column;
@@ -281,23 +298,27 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .footer__vr-guy {
-    width: 247px;
+    width: 250px;
+    height: 305px;
     position: absolute;
     z-index: 1;
     margin-top: 298px;
-    margin-left: 100px;
+    margin-left: 50px;
+    object-fit: cover;
 }
 
 .footer__pattern {
-    width: 450px;
+    width: 320px;
+    height: 500px;
     position: absolute;
     z-index: -2;
-    margin-left: 50px;
     margin-top: 150px;
     padding-bottom: 50px;
+    object-fit: cover;
 }
 
 .footer__register {
@@ -346,4 +367,123 @@ footer {
 
 .footer__small {
     font-size: 12px;
+}
+
+@media screen and (min-width: 321px){
+    
+    .schedule__days {
+        display: flex;
+        height: 70px;
+    }
+
+    .days__day1, .days__day2 {
+        width: 50%;
+        height: 100%;
+    }
+
+    .footer__newsletter {
+        width: 340px;
+    }
+
+    .footer__contact {
+        width: 280px;
+    }
+
+    .contact__title {
+        text-align: left;
+    }
+
+    .contact__body {
+        width: 210px;
+    }
+
+    .sponsors__title--blue {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 376px){
+    
+    .footer__newsletter {
+        width: 400px;
+    }
+
+    .footer__vr-guy {
+        height: 310px;
+        margin-left: 150px;
+        margin-top: 290px;
+    }
+
+    .footer__pattern {
+        background-image: url(../images/visual--holder.png);
+        background-position: center;
+        background-size: 600px;
+        height: 350px;
+        width: 400px;
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+
+    .footer__contact {
+        width: 350px;
+        padding: 10px 40px;
+    }
+
+    .footer__register {
+        margin-right: 120px;
+    }
+
+    .register__body {
+        width: 200px;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 765px){
+
+    .schedule__description {
+        width: 600px;
+    }
+
+    .schedule__day {
+        width: 688px;
+    }
+
+    .schedule__subtitle {
+        margin-right: 0;
+        width: 650px;
+        text-align: left;
+    }
+
+    .sponsors__supported-by {
+        width: 300px;
+        margin-right: 400px;
+    }
+
+    .sponsors__image--large {
+        width: 700px;
+    }
+
+    .sponsors__main-description {
+        width: 700px;
+    }
+
+    .sponsors__title--blue {
+        width: 500px;
+    }
+
+    .sponsors__description {
+        width: 700px;
+    }
+
+    .sponsors__image {
+        width: 400px;
+    }
+
+    .sponsors__logo {
+        width: 240px;
+    }
 }
