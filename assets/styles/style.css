@@ -312,13 +312,15 @@ body {
 }
 
 .footer__pattern {
-    width: 320px;
-    height: 500px;
+    background-image: url(../images/visual--holder.png);
+    background-position: center;
+    background-size: 600px;
+    height: 450px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 0px;
     position: absolute;
     z-index: -2;
-    margin-top: 150px;
-    padding-bottom: 50px;
-    object-fit: cover;
 }
 
 .footer__register {
@@ -412,16 +414,6 @@ footer {
         height: 310px;
         margin-left: 150px;
         margin-top: 290px;
-    }
-
-    .footer__pattern {
-        background-image: url(../images/visual--holder.png);
-        background-position: center;
-        background-size: 600px;
-        height: 350px;
-        width: 400px;
-        margin-top: 200px;
-        margin-left: 0px;
     }
 
     .footer__contact {
