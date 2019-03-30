@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Dump days 2018</title>
   </head>
   <body>
     <section class="schedule">
-      <span class="schedule__title">RASPORED</span>
+      <h2 class="schedule__title">RASPORED</h2>
       <p class="schedule__description">
         Vise od <b>20 predavaca</b> ce tokom <b>2 dana</b> pricati o raznim IT
         temama, a posebno o <b>modernim tehnologijama </b> te nacinima na koje
@@ -17,25 +18,29 @@
       </p>
       <div class="schedule__days">
         <div class="days__day1">
-          <span>1. DAN</span>
-          <span>11. svibnja</span>
+          <span class="day1__title">1. DAN</span>
+          <span class="day__subtitle">11. svibnja</span>
         </div>
         <div class="days__day2">
-          <span>2. DAN</span>
-          <span>12. svibnja</span>
+          <span class="day2__title">2. DAN</span>
+          <span class="day__subtitle">12. svibnja</span>
         </div>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">10:00 - 10:20</span>
-        <span class="day__title">OTVARANJE KONFERENCIJE</span>
+      </div>
+      <span class="day__title">OTVARANJE KONFERENCIJE</span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
-        <span class="day__time">10:35 - 11:20</span>
-        <span class="day__type--dev">DEV</span>
+        <div class="day__header">
+          <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <span class="day__time">10:35 - 11:20</span>
+          <span class="day__type--dev">DEV</span>
+        </div>
         <span class="day__title">AMPutacija MOBILNOG WEBA</span>
         <span class="day__description"
           >Ivan Lovric, Front-end Developer @ Profico</span
@@ -43,19 +48,23 @@
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">11:25 - 11:55</span>
         <span class="day__type--tech">TECH</span>
-        <span class="day__title">KAKO DOBITI ZELJENI POSAO</span>
+      </div>
+      <span class="day__title">KAKO DOBITI ZELJENI POSAO</span>
         <span class="day__description"
           >Adis Mustedanagic, iOS Team Lead @ Infinum</span
         >
       </div>
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">12:00 - 12:45</span>
         <span class="day__type--design">DESIGN</span>
-        <span class="day__title"
+      </div>
+      <span class="day__title"
           >DIZAJNIRANJE VIZUALNOG JEZIKA ZA AGENCIJU BUDUCNOSTI</span
         >
         <span class="day__description"
@@ -63,10 +72,12 @@
         >
       </div>
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">12:50 - 13:50</span>
         <span class="day__type--tech">TECH</span>
-        <span class="day__title"
+      </div>
+      <span class="day__title"
           >PANEL RASPRAVA: "VJECITA DILEMA IT- JEVACA - SHOULD I STAY OR SHOULD
           I GO?"</span
         >
@@ -78,90 +89,100 @@
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">13:50 - 14:20</span>
-        <span class="day__title">RUCAK</span>
+      </div>
+      <span class="day__title">RUCAK</span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">14:20 - 14:55</span>
         <span class="day__type--dev">DEV</span>
-        <span class="day__title">MIKROSERVISI U MAKRO OKRUZENJU</span>
+      </div>
+      <span class="day__title">MIKROSERVISI U MAKRO OKRUZENJU</span>
         <span class="day__description"
           >Ante Aljinovic, Tech Lead @ SeekandHit</span
         >
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">15:00 - 15:30</span>
         <span class="day__type--tech">TECH</span>
-        <span class="day__title"
-          >NIJE SALA: KAKO DO BOLJE KARIJERE UZ VLOGOVE I STORYE</span
-        >
+      </div>
+      <span class="day__title">
+        NIJE SALA: KAKO DO BOLJE KARIJERE UZ VLOGOVE I STORYE
+        </span>
         <span class="day__description"
-          >Iva Soldo, Co-Founder & Head of Marketing @ Bamboo Lab</span
-        >
+          >Iva Soldo, Co-Founder & Head of Marketing @ Bamboo Lab
+        </span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">15:35 - 16:10</span>
         <span class="day__type--design">DESIGN</span>
-        <span class="day__title"
-          >FREELANCING: KAKO DO SATNICE OD TISUCU DOLARA?</span
-        >
-        <span class="day__description"
-          >Robert Midzic, UI Designer / Graphic Designer</span
-        >
+      </div>
+      <span class="day__title">
+        FREELANCING: KAKO DO SATNICE OD TISUCU DOLARA?
+      </span>
+        <span class="day__description">Robert Midzic, UI Designer / Graphic Designer</span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">16:10 - 16:25</span>
-        <span class="day__title">KRATKA PAUZA</span>
+      </div>
+      <span class="day__title">KRATKA PAUZA</span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">16:25 - 17:10</span>
         <span class="day__type--dev">DEV</span>
-        <span class="day__title">KAKO (NE) IZRADITI RASISTICKI AI</span>
-        <span class="day__description"
-          >Zeljko Agic, Associate professor in computer science @ IT University
-          of Copenhagen</span
-        >
+      </div>
+      <span class="day__title">KAKO (NE) IZRADITI RASISTICKI AI</span>
+        <span class="day__description">
+          Zeljko Agic, Associate professor in computer science @ IT University of Copenhagen
+        </span>
       </div>
 
       <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">17:15 - 17:50</span>
         <span class="day__type--dev">DEV</span>
-        <span class="day__title">UMJETNA INTELIGENCIJA U PRAKSI</span>
-        <span class="day__description"
-          >Ilijan Kotarac, Software Engineer @ FIVE
-        </span>
+      </div>
+      <span class="day__title">UMJETNA INTELIGENCIJA U PRAKSI</span>
+        <span class="day__description">Ilijan Kotarac, Software Engineer @ FIVE</span>
       </div>
 
       <span class="schedule__subtitle">Radionice</span>
 
-      <div class="schedule__day">
-        <img class="day__clock" src="./assets/images/clock-icon.png" />
+      <div class="schedule__day  no-border">
+          <div class="day__header">
+              <img class="day__clock" src="./assets/images/clock-icon.png" />
         <span class="day__time">13:00 - 14:30</span>
         <span class="day__type--dev">DEV</span>
-        <span class="day__title">XAMARIN: UVOD U MOBILNO PROGRAMIRANJE</span>
+      </div>
+      <span class="day__title">XAMARIN: UVOD U MOBILNO PROGRAMIRANJE</span>
         <span class="day__description"
-          >Denis Jakusm Project Manager @ Atos</span
-        >
+          >Denis Jakus Project Manager @ Atos</span>
       </div>
     </section>
-
-    <img src="./assets/images/sponsors-title.png" />
-    <img src="./assets/images/profico-4.jpg" />
-    <h2>GENERALNI SPONZOR</h2>
-    <img src="./assets/images/profico_logo.png" />
-    <p>
+    <section class="sponsors">
+      <img class="sponsors__supported-by" src="./assets/images/sponsors-title.png" />
+      <img class="sponsors__image" src="./assets/images/profico-4.jpg" />
+      <h2 class="sponsors__title">GENERALNI SPONZOR</h2>
+    <img class="sponsors__main-image" src="./assets/images/profico_logo.png" />
+    <p class="sponsors__main-description">
       Ova progresivna agencija za dizajn i razvoj digitalnih proizvoda
       obilježila je proteklu godinu kao prva splitska tvrtka u povijesti koja je
       uvrštena na prestižnu Deloitte listu najbrže rastućih tehnoloških
@@ -171,16 +192,16 @@
       rješavati još neistražene probleme. Neki od problema na kojima trenutno
       rade vezani su uz sferu pametnih gradova, pomažu u izgradnji digitalnih
       proizvoda globalnim startupima u sharing ekonomiji, kreiraju rješenja za
-      upravljačku automatizaciju, telekom industriju, te brojne druge vertikale.
+      upravljačku automatizaciju, telekom industriju, te brojne druge vertikale. <br><br>
       Po svemu sudeći, Profico strelovito raste i u 2018., a dio svoje priče
       podijelit će sa širom javnosti kao generalni sponzor DUMP Days
       konferencije.
     </p>
-
-    <h2>ZLATNI SPONZORI</h2>
-    <img src="./assets/images/extension-engine_logo.jpg" />
-    <img src="./assets/images/extensionengine_image.jpg" />
-    <p>
+    
+    <h2 class="sponsors__title--blue">ZLATNI SPONZORI</h2>
+    <img class="sponsors__logo--gold" src="./assets/images/extension-engine_logo.jpg" />
+    <img class="sponsors__image" src="./assets/images/extensionengine_image.jpg" />
+    <p class="sponsors__description">
       Kroz višegodišnju suradnju s najboljim organizacijama na svijetu kao što
       su Harvard, MIT, Johnson & Johnson i Fitch Ratings, prepoznati su kao
       vodeći pružatelj usluga u području online učenja. Želja im je pomoći
@@ -189,9 +210,9 @@
       rade u opuštenoj atmosferi iz njihovih ureda u Bostonu, New Yorku, Splitu
       i Zagrebu.
     </p>
-    <img src="./assets/images/netmedia_logo.jpg" />
-    <img src="./assets/images/netmedia_image.jpg" />
-    <p>
+    <img class="sponsors__logo--gold" src="./assets/images/netmedia_logo.jpg" />
+    <img class="sponsors__image" src="./assets/images/netmedia_image.jpg" />
+    <p class="sponsors__description">
       Prisutni na stranom i domaćem tržištu, NETMedijevci pokrivaju puno toga -
       od kompleksnih poslovnih sustava do web platformi i mobilnih aplikacija, a
       od nedavno rade i na svom proizvodu. U njihovom uredu cijelo vrijeme
@@ -201,9 +222,9 @@
       kolektivnog rada u praksi svi pričaju jezikom "1 i 0", kombinirajući
       savršen miks iskustva i nove energije.
     </p>
-    <img src="./assets/images/seekandhit_logo.jpg" />
-    <img src="./assets/images/seekandhit_image.jpg" />
-    <p>
+    <img class="sponsors__logo--gold" src="./assets/images/seekandhit_logo.jpg" />
+    <img class="sponsors__image" src="./assets/images/seekandhit_image.jpg" />
+    <p class="sponsors__description">
       SeekandHit je specijalizirana agencija za digitalni marketing, analitiku i
       obradu podataka nastala 2007. godine. Do danas su isporučili preko 1000
       uspješnih oglasnih kampanja za tvrtke poput Podravke, Valamar Riviere,
@@ -213,85 +234,91 @@
       Google Partner, Facebook Blueprint Certified Buyer i Facebook Blueprint
       Certified Planner.
     </p>
-    <h2>SREBRNI SPONZORI</h2>
-    <img src="./assets/images/ambes-logo.png" />
-    <img src="./assets/images/arsfutura-logo.png" />
-    <img src="./assets/images/atos-logo.png" />
-    <img src="./assets/images/cisex-logo.png" />
-    <img src="./assets/images/dobartekhr-logo.png" />
-    <img src="./assets/images/ericsson-logo.png" />
-    <img src="./assets/images/fina-logo.png" />
-    <img src="./assets/images/hrcloud-logo.png" />
-    <img src="./assets/images/itsistemi-logo.png" />
-    <img src="./assets/images/lilcodelab-logo.png" />
-    <img src="./assets/images/rimac-logo.png" />
-    <img src="./assets/images/travelsoft-logo.png" />
-    <img src="./assets/images/typeqast-logo.png" />
-    <img src="./assets/images/zaba-logo.png" />
-
-    <h2>BRONCANI SPONZORI</h2>
-    <img src="./assets/images/appacus-logo.png" />
-    <img src="./assets/images/five-logo.png" />
-    <img src="./assets/images/nanobit-logo.png" />
-    <img src="./assets/images/slicejack-logo.png" />
-
-    <h1>GENERALNI MEDIJSKI POKROVITELJ</h1>
-    <img src="./assets/images/rtl-logo.png" />
-
-    <h1>ORGANIZACIJSKI PARTNERI</h1>
-    <img src="./assets/images/fesb-logo.png" />
-    <img src="./assets/images/sd-logo.png" />
-
-    <h1>HR PARTNER</h1>
+    <h2 class="sponsors__title--blue fs42">SREBRNI SPONZORI</h2>
+    <img class="sponsors__image" src="./assets/images/ambes-logo.png" />
+    <img class="sponsors__image" src="./assets/images/atos-logo.png" />
+    <img class="sponsors__image" src="./assets/images/arsfutura-logo.png" />
+    <img class="sponsors__image" src="./assets/images/cisex-logo.png" />
+    <img class="sponsors__image" src="./assets/images/dobartekhr-logo.png" />
+    <img class="sponsors__image" src="./assets/images/ericsson-logo.png" />
+    <img class="sponsors__image" src="./assets/images/fina-logo.png" />
+    <img class="sponsors__image" src="./assets/images/hrcloud-logo.png" />
+    <img class="sponsors__image" src="./assets/images/itsistemi-logo.png" />
+    <img class="sponsors__image" src="./assets/images/lilcodelab-logo.png" />
+    <img class="sponsors__image" src="./assets/images/rimac-logo.png" />
+    <img class="sponsors__image" src="./assets/images/travelsoft-logo.png" />
+    <img class="sponsors__image" src="./assets/images/typeqast-logo.png" />
+    <img class="sponsors__image" src="./assets/images/zaba-logo.png" />
+    
+    <h2 class="sponsors__title--blue">BRONCANI SPONZORI</h2>
+    <img class="sponsors__image" src="./assets/images/appacus-logo.png" />
+    <img class="sponsors__image" src="./assets/images/five-logo.png" />
+    <img class="sponsors__image" src="./assets/images/nanobit-logo.png" />
+    <img class="sponsors__image" src="./assets/images/slicejack-logo.png" />
+    
+    <h1 class="sponsors__title--blue fs42">GENERALNI MEDIJSKI POKROVITELJ</h1>
+    <img class="sponsors__image" src="./assets/images/rtl-logo.png" />
+    
+    <h1 class="sponsors__title--blue fs42">ORGANIZACIJSKI PARTNERI</h1>
+    <img class="sponsors__image" src="./assets/images/fesb-logo.png" />
+    <img class="sponsors__image" src="./assets/images/sd-logo.png" />
+    
+    <h1 class="sponsors__title--blue fs42">HR PARTNER</h1>
     <img src="./assets/images/manpowergroup-logo.png" />
+    
+    <h2 class="sponsors__title--blue">MEDIJSKI POKROVITELJI</h2>
+    <img class="sponsors__image--small" src="./assets/images/bug-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/slobodnadalmacija-logo.png" />
+    
+    <h2 class="sponsors__title--blue">PRIJATELJI</h2>
+    <img class="sponsors__image--small" src="./assets/images/split-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/hiper-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/ictzupanija-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/jetbrains-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/moduscreate-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/rosenfeld-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/sketch-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/splittechcity-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/sveuciliste-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/sublime-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/szst-logo.png" />
+    <img class="sponsors__image--small" src="./assets/images/tz-logo.png" />
+    
+    <h2 class="sponsors__title--blue">HRANA I PICE</h2>
+    <img class="sponsors__image--small" src="./assets/images/cocacolahbc-logo.png" />
+  </section>
 
-    <h2>MEDIJSKI POKROVITELJI</h2>
-    <img src="./assets/images/bug-logo.png" />
-    <img src="./assets/images/slobodnadalmacija-logo.png" />
-
-    <h2>PRIJATELJI</h2>
-    <img src="./assets/images/split-logo.png" />
-    <img src="./assets/images/hiper-logo.png" />
-    <img src="./assets/images/ictzupanija-logo.png" />
-    <img src="./assets/images/jetbrains-logo.png" />
-    <img src="./assets/images/moduscreate-logo.png" />
-    <img src="./assets/images/rosenfeld-logo.png" />
-    <img src="./assets/images/sketch-logo.png" />
-    <img src="./assets/images/splittechcity-logo.png" />
-    <img src="./assets/images/sveuciliste-logo.png" />
-    <img src="./assets/images/sublime-logo.png" />
-    <img src="./assets/images/szst-logo.png" />
-    <img src="./assets/images/tz-logo.png" />
-
-    <h2>HRANA I PICE</h2>
-    <img src="./assets/images/cocacolahbc-logo.png" />
-
-    <div class="newsletter">
+  <section class="footer">
+    <div class="footer__newsletter">
       <h2 class="newsletter__title">NEWSLETTER</h2>
       <p class="newsletter__body">
         Želiš prvi saznati za nagrade i novosti o konferenciji?
       </p>
-      <input
-        class="newsletter__input"
-        type="text"
-        placeholder="Upisi e-mail adresu"
-      />
-      <button class="newsletter__button">PRIJAVI SE</button>
+      <div class="newsletter__apply">
+        <input class="newsletter__input" type="text" placeholder="Upisi e-mail adresu"/>
+        <button class="newsletter__button">PRIJAVI SE</button>
+      </div>
     </div>
 
-    <div class="contact">
-      <h1>KONTAKTIRAJ NAS</h1>
-      <p>Imaš pitanja za nas ili želiš biti sponzor konferencije?</p>
-      <button>POSALJI MAIL</button>
-    </div>
-    <div class="register">
-      <h1>BUDI DIO KONFERENCIJE</h1>
-      <p>Zainteresirali smo te da dođeš na konferenciju?</p>
-      <button>REGISTRIRAJ SE</button>
-    </div>
-
-    <span>DUMP Days 2017 &#8594</span>
-    <span>DUMP &#8594</span>
-    <span>2018 DUMP Udruga mladih programera. Sva prava pridržana.</span>
+      <div class="footer__register">
+        <h1 class="register__title">BUDI DIO KONFERENCIJE</h1>
+        <p class="register__body">Zainteresirali smo te da dođeš na konferenciju?</p>
+        <button class="register__button">REGISTRIRAJ SE</button>
+      </div>
+      <img class="footer__vr-guy" src="./assets/images/vr-guy.png">
+      <img class="footer__pattern" src="./assets/images/visual--holder.png">
+      
+      <div class="footer__contact">
+        <h1 class="contact__title">KONTAKTIRAJ NAS</h1>
+        <p class="contact__body">Imaš pitanja za nas ili želiš biti sponzor konferencije?</p>
+        <button class="contact__button">POSALJI MAIL</button>
+      </div>
+      
+      <footer>
+        <span class="footer__large">DUMP Days 2017 &#8594</span>
+        <span class="footer__large">DUMP &#8594</span><br>
+        <span class="footer__small">2018 DUMP Udruga mladih programera. Sva prava pridržana.</span>
+      </footer>
+      </section>
   </body>
-</html>
+  </html>
