@@ -181,6 +181,24 @@ body {
     margin-top: 50px;
 }
 
+.sponsors__general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors__gold {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gold__element {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sponsors__supported-by {
     width: 200px;
     margin-right: 100px;
@@ -641,6 +659,10 @@ footer {
 
 @media screen and (min-width: 1400px) {
 
+    .schedule__title {
+        font-size: 52px;
+    }
+
     .schedule__day {
         width: 900px;
     }
@@ -650,6 +672,8 @@ footer {
         display: flex;
         flex-direction: column;
         margin-left: 33px;
+        margin-top: 100px;
+        overflow: hidden;
     }
 
     .gallery__element {
@@ -726,5 +750,98 @@ footer {
         width: 400px;
         text-align: center;
         font-weight: 900;
+    }
+
+    .sponsors__general {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 1100px;
+        height: 850px;
+    }
+
+    .sponsors__supported-by {
+        width: 500px;
+        margin: 0;
+    }
+
+    .sponsors__title {
+        font-size: 52px;
+        width: 400px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .sponsors__main-description {
+        width: 380px;
+        margin: 0;
+    }
+
+    .sponsors__image--large {
+        width: 450px !important;
+        margin:  50px 0 150px 0;
+    }
+
+    .sponsors__main-image {
+        width: 300px;
+        margin: 0 100px 50px 0;
+    }
+
+    .sponsors__gold {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1400px;
+    }
+
+    .gold__element {
+        width: 20%;
+        margin: 0 50px;
+    }
+    
+    .sponsors__description {
+        width: 300px;
+        height: 350px;
+    }
+
+    .sponsors__image {
+        width: 300px;
+    }
+
+    .sponsors__silver {
+        width: 1000px;
+    }
+
+    .sponsors__friends {
+        width: 1100px;
+    }
+
+    .footer__pattern {
+        padding: 0 100px;
+        margin-left: 250px;
+    }
+
+    .footer__vr-guy {
+        width: 300px;
+        margin-left: 250px;
+    }
+
+    .newsletter__title {
+        width: 500px;
+        font-size: 52px;
+    }
+
+    .sponsors__image--small {
+        height: 80px;
+    }
+
+    .sponsors__title--blue {
+        margin-top: 50px;
+    }
+
+    .sponsors__gold-title{
+        font-size: 52px;
+        margin-top: 0px;
     }
 }
